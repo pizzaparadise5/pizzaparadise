@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Paradise</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e44d26;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .menu-item img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .order-button {
+      background-color: #e44d26;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .order-button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pizza Paradise</h1>
+    <p>The Best Pizzas in Town</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#specials">Specials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Menu</h2>
+
+    <div class="menu-item">
+      <img src="margherita.jpg" alt="Margherita Pizza">
+      <div>
+        <h3>Margherita Pizza</h3>
+        <p>Classic pizza with tomato, mozzarella, and basil.</p>
+        <p>$10.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="pepperoni.jpg" alt="Pepperoni Pizza">
+      <div>
+        <h3>Pepperoni Pizza</h3>
+        <p>Delicious pizza topped with pepperoni and cheese.</p>
+        <p>$12.99</p>
+      </div>
+    </div>
+
+    <!-- Add more menu items as needed -->
+
+    <button class="order-button" onclick="placeOrder()">Place Order</button>
+  </section>
+
+  <section id="specials">
+    <h2>Specials</h2>
+    <p>Check out our daily specials and discounts!</p>
+    <!-- Add content for specials -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to place an order? Contact us!</p>
+    <!-- Add contact form or information -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Pizza Paradise. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function placeOrder() {
+      alert("Your order has been placed! Enjoy your pizza!");
+      // You can add more functionality for order placement here
+    }
+  </script>
+
+</body>
+</html>
